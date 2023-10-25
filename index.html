@@ -1,594 +1,63 @@
-<!DOCTYPE
-	html>
-<html
-	lang=en>
-
+<!DOCTYPE html>
+<html lang=en>
 <head>
-	<meta
-		charset=UTF-8>
-	<meta
-		name="viewport"
-		content="width=device-width, initial-scale=1">
-	<meta
-		name='description'
-		content='Cornell Kendo Club'>
-	<meta
-		name='keywords'
-		content='Cornell, kendo, club, Ithaca, martial arts, students, activity'>
-	<meta
-		name='theme-color'
-		content='black'>
-	<meta
-		name='author'
-		content='MacKenzie Harnett, Jeong Hyun Lee'>
-	<link
-		rel="icon"
-		href="images/Favicon_Logos/favicon_image.png">
+	<meta charset=UTF-8>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name='description' content='Cornell Kendo Club'>
+	<meta name='keywords' content='Cornell, kendo, club, Ithaca, martial arts, students, activity'>
+	<meta name='theme-color' content='black'>
+	<meta name='author' content='MacKenzie Harnett, Jeong Hyun Lee'>
+	<link rel="icon" href="images/Favicon_Logos/favicon_image.png">
 
 	<style>
-		hr,
-		img {
-			border: 0
-		}
-
-		h2,
-		hr {
-			margin-top: 20px
-		}
-
-		h2,
-		ul {
-			margin-bottom: 10px
-		}
-
-		.navbar,
-		.navbar-toggle,
-		body,
-		header,
-		ul {
-			position: relative
-		}
-
-		button,
-		footer a,
-		h2 {
-			color: inherit
-		}
-
-		a,
-		footer a {
-			text-decoration: none
-		}
-
-		html {
-			font-family: sans-serif;
-			-webkit-text-size-adjust: 100%;
-			-ms-text-size-adjust: 100%
-		}
-
-		footer,
-		header,
-		main,
-		nav {
-			display: block
-		}
-
-		a {
-			background-color: transparent;
-			color: #337ab7
-		}
-
-		b {
-			font-weight: 700
-		}
-
-		img {
-			vertical-align: middle
-		}
-
-		hr {
-			height: 0;
-			-webkit-box-sizing: content-box;
-			-moz-box-sizing: content-box;
-			box-sizing: content-box;
-			margin-bottom: 20px;
-			border-top: 1px solid #eee
-		}
-
-		button {
-			margin: 0;
-			font: inherit;
-			overflow: visible;
-			text-transform: none;
-			-webkit-appearance: button
-		}
-
-		button::-moz-focus-inner {
-			padding: 0;
-			border: 0
-		}
-
-		.container-fluid,
-		.navbar-collapse {
-			padding-right: 15px;
-			padding-left: 15px
-		}
-
-		*,
-		:after,
-		:before {
-			-webkit-box-sizing: border-box;
-			-moz-box-sizing: border-box;
-			box-sizing: border-box
-		}
-
-		html {
-			font-size: 10px
-		}
-
-		body {
-			margin: 0;
-			font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-			font-size: 14px;
-			line-height: 1.42857143;
-			color: #333;
-			background-color: #fff
-		}
-
-		button,
-		h2 {
-			font-family: inherit
-		}
-
-		button {
-			font-size: inherit;
-			line-height: inherit
-		}
-
-		h2 {
-			font-weight: 500;
-			line-height: 1.1;
-			font-size: 30px
-		}
-
-		p {
-			margin: 0 0 10px
-		}
-
-		.small {
-			font-size: 85%
-		}
-
-		ul {
-			margin-top: 0
-		}
-
-		.container-fluid {
-			margin-right: auto;
-			margin-left: auto
-		}
-
-		.collapse {
-			display: none
-		}
-
-		.navbar {
-			min-height: 50px;
-			margin-bottom: 20px;
-			border: 1px solid transparent
-		}
-
-		.navbar-collapse {
-			overflow-x: visible;
-			-webkit-overflow-scrolling: touch;
-			border-top: 1px solid transparent;
-			-webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, .1);
-			box-shadow: inset 0 1px 0 rgba(255, 255, 255, .1)
-		}
-
-		.container-fluid>.navbar-collapse,
-		.container-fluid>.navbar-header {
-			margin-right: -15px;
-			margin-left: -15px
-		}
-
-		@media (min-width:768px) {
-			.navbar {
-				border-radius: 4px
-			}
-
-			.navbar-header {
-				float: left
-			}
-
-			.navbar-collapse {
-				width: auto;
-				border-top: 0;
-				-webkit-box-shadow: none;
-				box-shadow: none
-			}
-
-			.navbar-collapse.collapse {
-				display: block !important;
-				height: auto !important;
-				padding-bottom: 0;
-				overflow: visible !important
-			}
-
-			.container-fluid>.navbar-collapse,
-			.container-fluid>.navbar-header {
-				margin-right: 0;
-				margin-left: 0
-			}
-		}
-
-		.navbar-toggle {
-			float: right;
-			padding: 9px 10px;
-			margin-top: 8px;
-			margin-right: 15px;
-			margin-bottom: 8px;
-			background-color: transparent;
-			background-image: none;
-			border: 1px solid transparent;
-			border-radius: 4px
-		}
-
-		.navbar-toggle .icon-bar {
-			display: block;
-			width: 22px;
-			height: 2px;
-			border-radius: 1px
-		}
-
-		.navbar-toggle .icon-bar+.icon-bar {
-			margin-top: 4px
-		}
-
-		@media (min-width:768px) {
-			.navbar-toggle {
-				display: none
-			}
-		}
-
-		.navbar-inverse {
-			background-color: #222;
-			border-color: #080808
-		}
-
-		.navbar-inverse .navbar-toggle {
-			border-color: #333
-		}
-
-		.navbar-inverse .navbar-toggle .icon-bar {
-			background-color: #fff
-		}
-
-		.navbar-inverse .navbar-collapse {
-			border-color: #101010
-		}
-
-		.container-fluid:after,
-		.container-fluid:before,
-		.navbar-collapse:after,
-		.navbar-collapse:before,
-		.navbar-header:after,
-		.navbar-header:before,
-		.navbar:after,
-		.navbar:before {
-			display: table;
-			content: " "
-		}
-
-		footer,
-		ul {
-			bottom: 0;
-			display: flex
-		}
-
-		#banner,
-		li a {
-			display: block
-		}
-
-		.container-fluid:after,
-		.navbar-collapse:after,
-		.navbar-header:after,
-		.navbar:after {
-			clear: both
-		}
-
-		@-ms-viewport {
-			width: device-width
-		}
-
-		* {
-			border-radius: 0 !important;
-			-moz-border-radius: 0 !important
-		}
-
-		body,
-		html {
-			width: 100%;
-			padding: 0
-		}
-
-		html {
-			height: 100%
-		}
-
-		body {
-			padding-bottom: 150px;
-			min-height: 100%
-		}
-
-		header {
-			background-color: #000;
-			padding-top: 30px
-		}
-
-		ul {
-			top: 0;
-			height: 60px;
-			list-style-type: none;
-			padding: 0
-		}
-
-		li a {
-			font: helvetica;
-			padding: 14px 25px;
-			text-decoration: none !important;
-			color: #fff !important
-		}
-
-		nav li {
-			margin: 0;
-			padding: 10px;
-			display: table-cell;
-			float: left
-		}
-
-		footer {
-			margin-bottom: 0;
-			padding: 10px;
-			position: absolute;
-			width: 100%;
-			height: 120px;
-			background: #333;
-			align-items: center;
-			justify-content: center
-		}
-
-		footer hr {
-			width: 259.67px
-		}
-
-		.content {
-			width: 70%;
-			max-width: 960px;
-			margin: auto
-		}
-
-		#banner-container {
-			margin-bottom: 30px;
-			max-width: 600px
-		}
-
-		#banner {
-			width: 80%;
-			max-width: 760px;
-			object-fit: contain;
-			margin: auto
-		}
-
-		.navbar .content {
-			width: auto;
-			display: table
-		}
-
-		.page-title {
-			color: #333;
-			margin-top: 70px
-		}
-
-		footer.small {
-			display: none
-		}
-
-		.footer-text {
-			color: #ebe8e8;
-			font-family: Helvetica;
-			margin: 10px 0
-		}
-
-		#email {
-			font-size: 12pt
-		}
-
-		.fa-facebook,
-		.fa-youtube {
-			font-size: 30pt
-		}
-
-		@media (max-width:947px) and (min-width:768px) {
-			li a {
-				padding: 14px 10px
-			}
-		}
-
-		@media (max-width:768px) {
-			ul {
-				display: block
-			}
-
-			header {
-				padding-top: 15px
-			}
-
-			#banner {
-				width: 100%
-			}
-
-			#banner-container {
-				margin-bottom: 15px
-			}
-		}
-
-		@media (max-width:620px) {
-			footer {
-				display: none
-			}
-
-			footer.small {
-				display: flex;
-				font-size: 14px
-			}
-
-			footer hr {
-				width: 240.44px
-			}
-
-			#email {
-				font-size: 11pt
-			}
-
-			.fa-facebook,
-			.fa-youtube {
-				font-size: 18pt
-			}
-		}
+	hr,img{border:0}h2,hr{margin-top:20px}h2,ul{margin-bottom:10px}.navbar,.navbar-toggle,body,header,ul{position:relative}button,footer a,h2{color:inherit}a,footer a{text-decoration:none}html{font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}footer,header,main,nav{display:block}a{background-color:transparent;color:#337ab7}b{font-weight:700}img{vertical-align:middle}hr{height:0;-webkit-box-sizing:content-box;-moz-box-sizing:content-box;box-sizing:content-box;margin-bottom:20px;border-top:1px solid #eee}button{margin:0;font:inherit;overflow:visible;text-transform:none;-webkit-appearance:button}button::-moz-focus-inner{padding:0;border:0}.container-fluid,.navbar-collapse{padding-right:15px;padding-left:15px}*,:after,:before{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}html{font-size:10px}body{margin:0;font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;line-height:1.42857143;color:#333;background-color:#fff}button,h2{font-family:inherit}button{font-size:inherit;line-height:inherit}h2{font-weight:500;line-height:1.1;font-size:30px}p{margin:0 0 10px}.small{font-size:85%}ul{margin-top:0}.container-fluid{margin-right:auto;margin-left:auto}.collapse{display:none}.navbar{min-height:50px;margin-bottom:20px;border:1px solid transparent}.navbar-collapse{overflow-x:visible;-webkit-overflow-scrolling:touch;border-top:1px solid transparent;-webkit-box-shadow:inset 0 1px 0 rgba(255,255,255,.1);box-shadow:inset 0 1px 0 rgba(255,255,255,.1)}.container-fluid>.navbar-collapse,.container-fluid>.navbar-header{margin-right:-15px;margin-left:-15px}@media (min-width:768px){.navbar{border-radius:4px}.navbar-header{float:left}.navbar-collapse{width:auto;border-top:0;-webkit-box-shadow:none;box-shadow:none}.navbar-collapse.collapse{display:block!important;height:auto!important;padding-bottom:0;overflow:visible!important}.container-fluid>.navbar-collapse,.container-fluid>.navbar-header{margin-right:0;margin-left:0}}.navbar-toggle{float:right;padding:9px 10px;margin-top:8px;margin-right:15px;margin-bottom:8px;background-color:transparent;background-image:none;border:1px solid transparent;border-radius:4px}.navbar-toggle .icon-bar{display:block;width:22px;height:2px;border-radius:1px}.navbar-toggle .icon-bar+.icon-bar{margin-top:4px}@media (min-width:768px){.navbar-toggle{display:none}}.navbar-inverse{background-color:#222;border-color:#080808}.navbar-inverse .navbar-toggle{border-color:#333}.navbar-inverse .navbar-toggle .icon-bar{background-color:#fff}.navbar-inverse .navbar-collapse{border-color:#101010}.container-fluid:after,.container-fluid:before,.navbar-collapse:after,.navbar-collapse:before,.navbar-header:after,.navbar-header:before,.navbar:after,.navbar:before{display:table;content:" "}footer,ul{bottom:0;display:flex}#banner,li a{display:block}.container-fluid:after,.navbar-collapse:after,.navbar-header:after,.navbar:after{clear:both}@-ms-viewport{width:device-width}*{border-radius:0!important;-moz-border-radius:0!important}body,html{width:100%;padding:0}html{height:100%}body{padding-bottom:150px;min-height:100%}header{background-color:#000;padding-top:30px}ul{top:0;height:60px;list-style-type:none;padding:0}li a{font:helvetica;padding:14px 25px;text-decoration:none!important;color:#fff!important}nav li{margin:0;padding:10px;display:table-cell;float:left}footer{margin-bottom:0;padding:10px;position:absolute;width:100%;height:120px;background:#333;align-items:center;justify-content:center}footer hr{width:259.67px}.content{width:70%;max-width:960px;margin:auto}#banner-container{margin-bottom:30px;max-width:600px}#banner{width:80%;max-width:760px;object-fit:contain;margin:auto}.navbar .content{width:auto;display:table}.page-title{color:#333;margin-top:70px}footer.small{display:none}.footer-text{color:#ebe8e8;font-family:Helvetica;margin:10px 0}#email{font-size:12pt}.fa-facebook,.fa-youtube{font-size:30pt}@media (max-width:947px) and (min-width:768px){li a{padding:14px 10px}}@media (max-width:768px){ul{display:block}header{padding-top:15px}#banner{width:100%}#banner-container{margin-bottom:15px}}@media (max-width:620px){footer{display:none}footer.small{display:flex;font-size:14px}footer hr{width:240.44px}#email{font-size:11pt}.fa-facebook,.fa-youtube{font-size:18pt}}
 	</style>
 
-	<link
-		rel="preload"
-		href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-		as="style"
-		onload="this.onload=null;this.rel='stylesheet'">
-	<link
-		rel="preload"
-		href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
-		as="style"
-		onload="this.onload=null;this.rel='stylesheet'">
-	<link
-		rel="preload"
-		href="styles/all.min.css"
-		as="style"
-		onload="this.onload=null;this.rel='stylesheet'">
+	<link rel="preload" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+	<link rel="preload" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+	<link rel="preload" href="styles/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
 	<noscript>
-		<link
-			rel="stylesheet"
-			type="text/css"
-			href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-			integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
-			crossorigin="anonymous">
-		<link
-			rel="stylesheet"
-			type="text/css"
-			href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
-			integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
-			crossorigin="anonymous">
-		<link
-			rel="stylesheet"
-			type="text/css"
-			href="styles/all.min.css">
+		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="styles/all.min.css">
 	</noscript>
-	<script>!function (t) { "use strict"; t.loadCSS || (t.loadCSS = function () { }); var e = loadCSS.relpreload = {}; if (e.support = function () { var e; try { e = t.document.createElement("link").relList.supports("preload") } catch (t) { e = !1 } return function () { return e } }(), e.bindMediaToggle = function (t) { var e = t.media || "all"; function a() { t.media = e } t.addEventListener ? t.addEventListener("load", a) : t.attachEvent && t.attachEvent("onload", a), setTimeout(function () { t.rel = "stylesheet", t.media = "only x" }), setTimeout(a, 3e3) }, e.poly = function () { if (!e.support()) for (var a = t.document.getElementsByTagName("link"), n = 0; n < a.length; n++) { var o = a[n]; "preload" !== o.rel || "style" !== o.getAttribute("as") || o.getAttribute("data-loadcss") || (o.setAttribute("data-loadcss", !0), e.bindMediaToggle(o)) } }, !e.support()) { e.poly(); var a = t.setInterval(e.poly, 500); t.addEventListener ? t.addEventListener("load", function () { e.poly(), t.clearInterval(a) }) : t.attachEvent && t.attachEvent("onload", function () { e.poly(), t.clearInterval(a) }) } "undefined" != typeof exports ? exports.loadCSS = loadCSS : t.loadCSS = loadCSS }("undefined" != typeof global ? global : this);
+	<script>!function(t){"use strict";t.loadCSS||(t.loadCSS=function(){});var e=loadCSS.relpreload={};if(e.support=function(){var e;try{e=t.document.createElement("link").relList.supports("preload")}catch(t){e=!1}return function(){return e}}(),e.bindMediaToggle=function(t){var e=t.media||"all";function a(){t.media=e}t.addEventListener?t.addEventListener("load",a):t.attachEvent&&t.attachEvent("onload",a),setTimeout(function(){t.rel="stylesheet",t.media="only x"}),setTimeout(a,3e3)},e.poly=function(){if(!e.support())for(var a=t.document.getElementsByTagName("link"),n=0;n<a.length;n++){var o=a[n];"preload"!==o.rel||"style"!==o.getAttribute("as")||o.getAttribute("data-loadcss")||(o.setAttribute("data-loadcss",!0),e.bindMediaToggle(o))}},!e.support()){e.poly();var a=t.setInterval(e.poly,500);t.addEventListener?t.addEventListener("load",function(){e.poly(),t.clearInterval(a)}):t.attachEvent&&t.attachEvent("onload",function(){e.poly(),t.clearInterval(a)})}"undefined"!=typeof exports?exports.loadCSS=loadCSS:t.loadCSS=loadCSS}("undefined"!=typeof global?global:this);
 	</script>
 
-	<script
-		type='text/javascript'
-		src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"
-		defer></script>
-	<script
-		src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
-		integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
-		crossorigin="anonymous"
-		defer></script>
+	<script type='text/javascript' src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" defer></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous" defer></script>
 
-	<meta
-		property="og:title"
-		content="Cornell Kendo Club">
-	<meta
-		property="og:type"
-		content="website">
-	<meta
-		property="og:url"
-		content="">
-	<meta
-		property="og:image"
-		content="images/Favicon_Logos/logo2.png">
-	<title>
-		Home
-		|
-		Cornell
-		Kendo
-		Club
-	</title>
+	<meta property="og:title" content="Cornell Kendo Club">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="">
+	<meta property="og:image" content="images/Favicon_Logos/logo2.png">
+    <title>Home | Cornell Kendo Club</title>
 </head>
 
 <body>
 	<header>
-		<div
-			class="content"
-			id='banner-container'>
-			<img
-				id="banner"
-				src="images/banner_optimized.png"
-				alt="banner">
+		<div class="content" id='banner-container'>
+			<img id="banner" src="images/banner_optimized.png" alt="banner">
 		</div>
-		<nav
-			class="navbar navbar-inverse">
-			<div
-				class="container-fluid">
-				<div
-					class="navbar-header">
-					<button
-						type="button"
-						class="navbar-toggle"
-						data-toggle="collapse"
-						data-target="#myNavbar">
-						<span
-							class="icon-bar"></span>
-						<span
-							class="icon-bar"></span>
-						<span
-							class="icon-bar"></span>
+		<nav class="navbar navbar-inverse">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
 					</button>
 				</div>
-				<div
-					class="collapse navbar-collapse"
-					id="myNavbar">
-					<div
-						class="content">
+				<div class="collapse navbar-collapse" id="myNavbar">
+					<div class="content">
 						<ul>
-							<li>
-								<a
-									href="index.html">Home</a>
-							</li>
-							<li>
-								<a
-									href="about.html">About</a>
-							</li>
-							<li>
-								<a
-									href="eboard.html">eBoard</a>
-							</li>
-							<li>
-								<a href="https://forms.gle/M5QPt79rdNtD7zG19"
-									target="_blank">Signup</a>
-							</li>
-							<li>
-								<a
-									href="faq.html">FAQ</a>
-							</li>
-							<li>
-								<a href="https://www.youtube.com/channel/UC7Iqv7rdZycY0WpknVnVzFQ"
-									target="_blank">Videos</a>
-							</li>
-							<li>
-								<a
-									href="forms.html">Forms</a>
-							</li>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="about.html">About</a></li>
+							<li><a href="eboard.html">eBoard</a></li>
+							<li><a href="https://forms.gle/M5QPt79rdNtD7zG19" target="_blank">Signup</a></li>
+							<li><a href="faq.html">FAQ</a></li>
+							<li><a href="https://www.youtube.com/channel/UC7Iqv7rdZycY0WpknVnVzFQ" target="_blank">Videos</a></li>
+							<li><a href="forms.html">Forms</a></li>
 						</ul>
 					</div>
 				</div>
@@ -597,269 +66,59 @@
 	</header>
 
 	<main>
-		<div
-			class="content">
-			<h2
-				class="page-title">
-				Welcome
-				to
-				the
-				Kendo
-				Club
-				at
-				Cornell!
-			</h2>
+		<div class="content">
+			<h2 class="page-title">Welcome to the Kendo Club at Cornell!</h2>
 
 			<hr />
-			<p>
-				Join
-				us
-				for
-				the
-				Fall
-				2023
-				semester!
-				We
-				are
-				currently
-				recruiting
-				students!
-				Please
-				contact
-				us
-				with
-				any
-				questions
-				you
-				may
-				have.
-				Our
-				first
-				practice
-				will
-				be
-				on
-				<strong>Saturday,
-					September
-					16th,
-					3pm
-					at
-					the
-					RPCC
-					multipurpose
-					room</strong>,
-				we
-				hope
-				to
-				see
-				you
-				all
-				there!
-			</p>
+			<p>Join us for the Fall 2023 semester! We are currently recruiting students! Please contact us with any questions you may have. Our first practice will be on <strong>Saturday, September 16th, 3pm at the RPCC multipurpose room</strong>, we hope to see you all there!</p>
 
-			<p>
-				We
-				encourage
-				you
-				to
-				click
-				on
-				the
-				'Sign
-				Up'
-				link
-				on
-				the
-				navigation
-				bar
-				if
-				you
-				want
-				to
-				go
-				ahead
-				and
-				sign
-				up
-				for
-				the
-				Fall
-				2023
-				semester
-				ahead
-				of
-				time
-				and
-				be
-				added
-				to
-				our
-				ListServ.
-				Thank
-				you!
-			</p>
-			<p>
-				If
-				you
-				want
-				to
-				learn
-				some
-				useful
-				tips
-				and
-				skills
-				for
-				kendo
-				before
-				joining
-				the
-				club,
-				check
-				out
-				this
-				website
-				made
-				by
-				one
-				of
-				our
-				members:
-			</p>
-			<a
-				href="https://kendoaio.vercel.app">Kendo
-				All
-				In
-				One</a>
+			<p>We encourage you to click on the 'Sign Up' link on the navigation bar if you want to go ahead and sign up for the Fall 2023 semester ahead of time and be added to our ListServ. Thank you!</p>
+			<p>If you want to learn some useful tips and skills for kendo before joining the club, check out this website made by one of our members:</p>
+			<a href = "https://kendoaio.vercel.app">Kendo All In One</a>	
 			<b></b>
-			<p>
-				<img
-					alt="group photo"
-					src="images/group.jpg"
-					style="max-height: 500px; height: 100%; width: 100%; object-fit: contain; margin-top: 30px" />
-			</p>
-			<p>
-				&nbsp;
-			</p>
-			<p>
-				&nbsp;
-			</p>
+			<p><img alt="group photo" src="images/group.jpg" style="max-height: 500px; height: 100%; width: 100%; object-fit: contain; margin-top: 30px" /></p>
+			<p>&nbsp;</p>
+			<p>&nbsp;</p>
 		</div>
 	</main>
 
 	<footer>
-		<div
-			class="footer-left">
-			<center>
-				<p
-					class='footer-text'>
-					<b>Contact
-						info</b>
-				</p>
-				<hr
-					style="margin:10px 0px">
-				<p>
-				</p>
-				<p class='footer-text'
-					id="email">
-					<a href="mailto:cornellkendoclub@gmail.com"
-						target="_blank"
-						data-toggle="tooltip"
-						title="Email"
-						data-placement="left"><i
-							class="far fa-envelope"></i>
-						cornellkendoclub@gmail.com</a>
-				</p>
-			</center>
-		</div>
-		<div
-			class="vertical-line">
-		</div>
-		<div
-			class="footer-right">
-			<p
-				class='footer-text'>
-				<a href="https://www.facebook.com/CornellKendoClub/"
-					target="_blank"
-					data-toggle="tooltip"
-					title="Facebook"
-					data-placement="bottom"><i
-						class="fab fa-facebook"></i></a>
-				<span
-					style="padding-right: 25px"></span><a
-					href="https://www.youtube.com/channel/UC7Iqv7rdZycY0WpknVnVzFQ"
-					target="_blank"
-					data-toggle="tooltip"
-					title="Youtube"
-					data-placement="bottom"><i
-						class="fab fa-youtube"></i></a>
-			</p>
-		</div>
-	</footer>
+        <div class="footer-left">
+            <center>
+                <p class='footer-text'><b>Contact info</b></p>
+                <hr style="margin:10px 0px">
+                <p></p>
+                <p class='footer-text' id="email"><a href="mailto:cornellkendoclub@gmail.com" target="_blank" data-toggle="tooltip" title="Email" data-placement="left"><i class="far fa-envelope"></i> cornellkendoclub@gmail.com</a></p>
+            </center>
+        </div>
+        <div class="vertical-line">
+        </div>
+        <div class="footer-right">
+            <p class='footer-text'><a href="https://www.facebook.com/CornellKendoClub/" target="_blank" data-toggle="tooltip" title="Facebook" data-placement="bottom"><i class="fab fa-facebook"></i></a>
+                <span style="padding-right: 25px"></span><a href="https://www.youtube.com/channel/UC7Iqv7rdZycY0WpknVnVzFQ" target="_blank" data-toggle="tooltip" title="Youtube" data-placement="bottom"><i class="fab fa-youtube"></i></a>
+            </p>
+						<p class='footer-text'><b>This organization is a registered student organization of Cornell University.</b></p>
+        </div>
+    </footer>
 
-	<footer
-		class="small">
-		<center>
-			<p
-				class='footer-text'>
-				<b>Contact
-					info</b>
-			</p>
-			<hr
-				style="margin:10px 0px">
-			<p>
-			</p>
-			<p class='footer-text'
-				id="email">
-				<a href="mailto:cornellkendoclub@gmail.com"
-					target="_blank"
-					data-toggle="tooltip"
-					title="Email"
-					data-placement="left"><i
-						class="far fa-envelope"></i>
-					cornellkendoclub@gmail.com</a>
-			</p>
-			<p>
-			</p>
-			<p
-				class='footer-text'>
-				<a href="https://www.facebook.com/CornellKendoClub/"
-					target="_blank"
-					data-toggle="tooltip"
-					title="Facebook"
-					data-placement="left"><i
-						class="fab fa-facebook"></i></a>
-				<span
-					style="padding-right: 25px"></span><a
-					href="https://www.youtube.com/channel/UC7Iqv7rdZycY0WpknVnVzFQ"
-					target="_blank"
-					data-toggle="tooltip"
-					title="Youtube"
-					data-placement="right"><i
-						class="fab fa-youtube"></i></a>
-			<p>
-			</p>
-			<p
-				class='footer-text'>
-				<b>This
-					organization
-					is
-					a
-					registered
-					student
-					organization
-					of
-					Cornell
-					University.</b>
-			</p>
-			</p>
-		</center>
-	</footer>
-	<script>
-		window.addEventListener('DOMContentLoaded', function () {
-			$('[data-toggle="tooltip"]').tooltip();
-		});
-	</script>
+    <footer class="small">
+        <center>
+            <p class='footer-text'><b>Contact info</b></p>
+            <hr style="margin:10px 0px">
+            <p></p>
+            <p class='footer-text' id="email"><a href="mailto:cornellkendoclub@gmail.com" target="_blank" data-toggle="tooltip" title="Email" data-placement="left"><i class="far fa-envelope"></i> cornellkendoclub@gmail.com</a></p>
+            <p></p>
+            <p class='footer-text'><a href="https://www.facebook.com/CornellKendoClub/" target="_blank" data-toggle="tooltip" title="Facebook" data-placement="left"><i class="fab fa-facebook"></i></a>
+            <span style="padding-right: 25px"></span><a href="https://www.youtube.com/channel/UC7Iqv7rdZycY0WpknVnVzFQ" target="_blank" data-toggle="tooltip" title="Youtube" data-placement="right"><i class="fab fa-youtube"></i></a>
+            <p></p>
+						<p class='footer-text'><b>This organization is a registered student organization of Cornell University.</b></p>
+						</p>
+        </center>
+    </footer>
+    <script>
+        window.addEventListener('DOMContentLoaded', function() {
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+    </script>
 </body>
-
 </html>
