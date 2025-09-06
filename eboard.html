@@ -11,6 +11,31 @@
 
     <style>
     hr,img{border:0}h2,hr{margin-top:20px}h2,ul{margin-bottom:10px}.navbar,.navbar-toggle,body,header,ul{position:relative}button,footer a,h2{color:inherit}a,footer a{text-decoration:none}html{font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}footer,header,main,nav{display:block}a{background-color:transparent;color:#337ab7}b{font-weight:700}img{vertical-align:middle}hr{height:0;-webkit-box-sizing:content-box;-moz-box-sizing:content-box;box-sizing:content-box;margin-bottom:20px;border-top:1px solid #eee}button{margin:0;font:inherit;overflow:visible;text-transform:none;-webkit-appearance:button}button::-moz-focus-inner{padding:0;border:0}.container-fluid,.navbar-collapse{padding-right:15px;padding-left:15px}*,:after,:before{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}html{font-size:10px}body{margin:0;font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;line-height:1.42857143;color:#333;background-color:#fff}button,h2{font-family:inherit}button{font-size:inherit;line-height:inherit}h2{font-weight:500;line-height:1.1;font-size:30px}p{margin:0 0 10px}.small{font-size:85%}ul{margin-top:0}.container-fluid{margin-right:auto;margin-left:auto}.collapse{display:none}.navbar{min-height:50px;margin-bottom:20px;border:1px solid transparent}.navbar-collapse{overflow-x:visible;-webkit-overflow-scrolling:touch;border-top:1px solid transparent;-webkit-box-shadow:inset 0 1px 0 rgba(255,255,255,.1);box-shadow:inset 0 1px 0 rgba(255,255,255,.1)}.container-fluid>.navbar-collapse,.container-fluid>.navbar-header{margin-right:-15px;margin-left:-15px}@media (min-width:768px){.navbar{border-radius:4px}.navbar-header{float:left}.navbar-collapse{width:auto;border-top:0;-webkit-box-shadow:none;box-shadow:none}.navbar-collapse.collapse{display:block!important;height:auto!important;padding-bottom:0;overflow:visible!important}.container-fluid>.navbar-collapse,.container-fluid>.navbar-header{margin-right:0;margin-left:0}}.navbar-toggle{float:right;padding:9px 10px;margin-top:8px;margin-right:15px;margin-bottom:8px;background-color:transparent;background-image:none;border:1px solid transparent;border-radius:4px}.navbar-toggle .icon-bar{display:block;width:22px;height:2px;border-radius:1px}.navbar-toggle .icon-bar+.icon-bar{margin-top:4px}@media (min-width:768px){.navbar-toggle{display:none}}.navbar-inverse{background-color:#222;border-color:#080808}.navbar-inverse .navbar-toggle{border-color:#333}.navbar-inverse .navbar-toggle .icon-bar{background-color:#fff}.navbar-inverse .navbar-collapse{border-color:#101010}.container-fluid:after,.container-fluid:before,.navbar-collapse:after,.navbar-collapse:before,.navbar-header:after,.navbar-header:before,.navbar:after,.navbar:before{display:table;content:" "}footer,ul{bottom:0;display:flex}#banner,li a{display:block}.container-fluid:after,.navbar-collapse:after,.navbar-header:after,.navbar:after{clear:both}@-ms-viewport{width:device-width}*{border-radius:0!important;-moz-border-radius:0!important}body,html{width:100%;padding:0}html{height:100%}body{padding-bottom:150px;min-height:100%}header{background-color:#000;padding-top:30px}ul{top:0;height:60px;list-style-type:none;padding:0}li a{font:helvetica;padding:14px 25px;text-decoration:none!important;color:#fff!important}nav li{margin:0;padding:10px;display:table-cell;float:left}footer{margin-bottom:0;padding:10px;position:absolute;width:100%;height:120px;background:#333;align-items:center;justify-content:center}footer hr{width:259.67px}.content{width:70%;max-width:960px;margin:auto}#banner-container{margin-bottom:30px;max-width:600px}#banner{width:80%;max-width:760px;object-fit:contain;margin:auto}.navbar .content{width:auto;display:table}.page-title{color:#333;margin-top:70px}footer.small{display:none}.footer-text{color:#ebe8e8;font-family:Helvetica;margin:10px 0}#email{font-size:12pt}.fa-facebook,.fa-youtube{font-size:30pt}@media (max-width:947px) and (min-width:768px){li a{padding:14px 10px}}@media (max-width:768px){ul{display:block}header{padding-top:15px}#banner{width:100%}#banner-container{margin-bottom:15px}}@media (max-width:620px){footer{display:none}footer.small{display:flex;font-size:14px}footer hr{width:240.44px}#email{font-size:11pt}.fa-facebook,.fa-youtube{font-size:18pt}}
+
+    /* Rest of this style code is for the gallery; if this breaks anything just get rid of it*/
+    body {font-family: Arial;margin: 0;}*{box-sizing: border-box;}img {vertical-align: middle;}
+    /* Position the image container (needed to position the left and right arrows) */
+    .gallery-container {position: relative;max-width: 1000px}
+    /* Hide the images by default */
+    .slideshow {display: none;}
+    /* Add a pointer when hovering over the thumbnail images */
+    .cursor {cursor: pointer;}
+    /* Next & previous buttons */
+    .prev,
+    .next {cursor: pointer;position: absolute;top: 40%;width: auto;padding: 16px;margin-top: -50px;color: rgb(0, 0, 0);font-weight: bold;font-size: 20px;border-radius: 0 3px 3px 0;user-select: none;-webkit-user-select: none;}
+    /* Position the next & previous buttons */
+    .prev {left: 0;border-radius: 3px 0 0 3px;}
+    .next {right: 0;border-radius: 3px 0 0 3px;}
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover,
+    .next:hover {background-color: rgba(0, 0, 0, 0.8);}
+    /* Container for image text */
+    .caption-container {text-align: center;background-color: #222;padding: 2px 16px;color: white;}
+    .row:after {content: "";display: table;clear: both;}
+    /* Six columns side by side */
+    .column {float: left;width: 16.66%;}
+    /* Add a transparency effect for thumnbail images */
+    .demo {opacity: 0.6;}.active,.demo:hover {opacity: 1;}
     </style>
 
     <link rel="preload" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
@@ -87,6 +112,81 @@
         <center><b>Social Chair</b><br/>&nbsp;</center>
 
         <center style="margin-bottom:80px;">Reina Kondo &#39;28</center>
+
+        <h2 align="center">Meet the E-Board!</h2>
+
+        <!-- Slideshow image gallery from https://www.w3schools.com/howto/howto_js_slideshow_gallery.asp -->
+        <center>
+        <div class="gallery-container">
+        <div class="slideshow">
+            <img src="images/2526Eboard/DavidZ.png" style="height: 40%; width: 40%;">
+        </div>
+        <div class="slideshow">
+            <img src="images/2526Eboard/Ian.png" style="height: 40%; width: 40%;">
+        </div>
+        <div class="slideshow">
+            <img src="images/2526Eboard/Soapy.png" style="height: 40%; width: 40%;">
+        </div>
+        <div class="slideshow">
+            <img src="images/2526Eboard/Ari.png" style="height: 40%; width: 40%;">
+        </div>
+        <div class="slideshow">
+            <img src="images/2526Eboard/DavidI.png" style="height: 40%; width: 40%;">
+        </div>
+        <div class="slideshow">
+            <img src="images/2526Eboard/Reina.png" style="height: 40%; width: 40%;">
+        </div>
+            
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+
+        <div class="caption-container">
+            <p id="caption"></p>
+        </div>
+
+        <div class="row">
+            <div class="column"><img class="demo cursor" src="images/2526Eboard/DavidZ.png" style="width:100%" onclick="currentSlide(1)" alt="David Zhang, President"></div>
+            <div class="column"><img class="demo cursor" src="images/2526Eboard/Ian.png" style="width:100%" onclick="currentSlide(2)" alt="Ian Branigan, President"></div>
+            <div class="column"><img class="demo cursor" src="images/2526Eboard/Soapy.png" style="width:100%" onclick="currentSlide(3)" alt="Sophie Bredall, Vice President"></div>
+            <div class="column"><img class="demo cursor" src="images/2526Eboard/Ari.png" style="width:100%" onclick="currentSlide(4)" alt="Ari Gasparini, Treasurer"></div>
+            <div class="column"><img class="demo cursor" src="images/2526Eboard/DavidI.png" style="width:100%" onclick="currentSlide(5)" alt="David Isham, Treasurer"></div>    
+            <div class="column"><img class="demo cursor" src="images/2526Eboard/Reina.png" style="width:100%" onclick="currentSlide(6)" alt="Reina Kondo, Social Chair"></div>
+        </div>
+        </div>
+        </center>
+
+        <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+        showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+        showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("slideshow");
+        let dots = document.getElementsByClassName("demo");
+        let captionText = document.getElementById("caption");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+        captionText.innerHTML = dots[slideIndex-1].alt;
+        }
+        </script>
+
+        <!-- End of slideshow code -->
 
     </main>
 
